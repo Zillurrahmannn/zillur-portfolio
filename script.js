@@ -1,3 +1,4 @@
+console.log("Script loaded v2");
 const form = document.getElementById("contactForm");
 const statusText = document.getElementById("status");
 
@@ -12,9 +13,6 @@ form.addEventListener("submit", function (e) {
 
   fetch("https://script.google.com/macros/s/AKfycbzE6JQLgNcvSChKAVMSCkat3tw9Q7Gl8U2olcnvpBNJaOkPxEV1nIlXSJm3rtSO9mYmxQ/exec", {
     method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
     body: JSON.stringify(data)
   })
   .then(res => res.json())
@@ -26,4 +24,5 @@ form.addEventListener("submit", function (e) {
     alert("Failed to send message. Please try again.");
   });
 });
+
 

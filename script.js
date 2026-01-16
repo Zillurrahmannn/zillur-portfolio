@@ -10,7 +10,7 @@ form.addEventListener("submit", function (e) {
     message: document.getElementById("message").value
   };
 
-  fetch("PASTE_YOUR_APPS_SCRIPT_URL_HERE", {
+  fetch("https://script.google.com/macros/s/AKfycbzE6JQLgNcvSChKAVMSCkat3tw9Q7Gl8U2olcnvpBNJaOkPxEV1nIlXSJm3rtSO9mYmxQ/exec", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
@@ -26,3 +26,4 @@ form.addEventListener("submit", function (e) {
     alert("Failed to send message. Please try again.");
   });
 });
+
